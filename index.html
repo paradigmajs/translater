@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            width: 300px;
+            max-width: 300px;
+            min-width: 300px;
+            height: 250px;
+            min-height: 250px;
+            max-height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <select id="source">
+        <option value="ru">Russ</option>
+        <option value="en">ENGLISH</option>
+    </select>
+    
+    <textarea id="enter" onkeyup="clearOutput()"></textarea>
+    
+    <select id="target">
+        <option value="ru">Russ</option>
+        <option value="en" selected>ENGLISH</option>
+    </select>
+
+    <textarea id="output" disabled></textarea>
+    <button onclick="goToTranslate()">Translate</button>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
